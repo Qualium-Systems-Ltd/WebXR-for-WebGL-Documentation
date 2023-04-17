@@ -42,6 +42,7 @@
 					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#s-introduction"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#key-features">Key Features</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#devices-support">Devices Support</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#dependencies">Dependencies</a></li>
 
 					<!--Getting Started-->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#s-getting-started"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Getting Started</a></li>
@@ -91,7 +92,7 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2023-03-21</span></h1>
 						<section class="docs-intro">
-							<p>WebXR for WebGL - is a plugin for <a href="https://unity.com/">Unity game engine</a> that helps you to create AR Experiences and run them in web browsers. You can easily create AR experiences or even AR game that interact realistically with objects and environments.</p>
+							<p>WebXR for WebGL is a plugin for <a href="https://unity.com/">Unity</a> game engine that helps you build AR Experiences and run them in web browsers. You can easily create AR experiences or even AR game that interact realistically with objects and environments.</p>
 						</section><!--//docs-intro-->
 
 						<h5 style="display:none">Github Code Example:</h5>
@@ -107,24 +108,24 @@
 					<section class="docs-section" id="key-features">
 						<h2 class="section-heading">Key Features</h2>
 
-						<p>WebXR for WebGL plugin helps you to create the following AR Experiences:</p>
+						<p>With WebXR for WebGL plugin, the following AR Experiences are available to you:</p>
 						<ul>
-							<li><a class="scrollto" href="#s-targets-recognition">Targets Recognition</a> - for recognition and tracking of prepared images.</li>
-							<li><a class="scrollto" href="#s-targets-capture">Targets Capture</a> - for recognition and tracking targets defined by users in runtime.</li>
-							<li><a class="scrollto" href="#s-face-recognition">Face recognition</a> - for recognition the position of the face and facial expressions.</li>
-							<li><a class="scrollto" href="#s-surface-recognition">Surface recognition</a> - for surface recogntion.</li>
-							<li><a class="scrollto" href="#s-geolocation">AR Geolocation</a> - for tracking the direction and distance to geolocations based on the user's location.</li>
+							<li><a class="scrollto" href="#s-targets-recognition">Targets Recognition</a> to recognize and track prepared images.</li>
+							<li><a class="scrollto" href="#s-targets-capture">Targets Capture</a> to recognize and track user-defined targets in runtime.</li>
+							<li><a class="scrollto" href="#s-face-recognition">Face recognition</a> to recognize face positions and facial expressions.</li>
+							<li><a class="scrollto" href="#s-surface-recognition">Surface recognition</a> for surface recognition.</li>
+							<li><a class="scrollto" href="#s-geolocation">AR Geolocation</a> to track direction and distance to geolocations based on a user's location.</li>
 						</ul>
 					</section><!--//section-->
 
 					<section class="docs-section" id="devices-support">
-						<h2 class="section-heading">Devices Support</h2>
+						<h2 class="section-heading">Supported Devices</h2>
 						<p>Currently, only the Chrome browser on Android devices is fully supported. Some features may not work on iOS devices or other browsers. You can find more details in the features descriptions sections (<a class="scrollto" href="#s-targets-recognition">Targets Recognition</a>, <a class="scrollto" href="#s-targets-capture">Targets Capture</a>, <a class="scrollto" href="#s-face-recognition">Face Recognition</a>, <a class="scrollto" href="#s-surface-recognition">Surface Recognition</a>, <a class="scrollto" href="#s-geolocation">AR Geolocation</a> ).</p>
 					</section><!--//section-->
 
 					<section class="docs-section" id="dependencies">
 						<h2 class="section-heading">Dependencies</h2>
-						<p>Plugin based on <strong><a href="https://github.com/hiukim/mind-ar-js">MindAR</a></strong> and <strong><a href="https://threejs.org/">Three.js</a></strong></p>
+						<p>Plugin is based on <strong><a href="https://github.com/hiukim/mind-ar-js">MindAR</a></strong> and <strong><a href="https://threejs.org/">Three.js</a></strong></p>
 					</section><!--//section-->
 
 				</article>
@@ -133,7 +134,7 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">Getting Started</h1>
 						<section class="docs-intro">
-							<p>To use the WebXR for WebGL plugin you will need to download the latest release package from Github:<a href="https://github.com/Qualium-Systems-Ltd/WebXR-for-WebGL/releases/">https://github.com/Qualium-Systems-Ltd/WebXR-for-WebGL/releases/</a> and import it to the empty Unity project.</p>
+							<p>To use the WebXR for WebGL plugin, you will need to download the latest release package from Github [<a href="https://github.com/Qualium-Systems-Ltd/WebXR-for-WebGL/releases/">https://github.com/Qualium-Systems-Ltd/WebXR-for-WebGL/releases/</a>] and import it to the empty Unity project.</p>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -142,7 +143,7 @@
 										</span><!--//icon-holder-->
 										Note
 									</h4>
-									<p>The WebXR for WebGL plugin has been developed with Unity 2021.3.13f1 using the URP (Universal Render Pipeline), but URP is not neccessary. In addition, some features of URP (such as Post-Processing and HDR) is not supported in the plugin.</p>
+									<p>The WebXR for WebGL plugin has been developed with Unity 2021.3.13f1 using the URP (Universal Render Pipeline). However, URP is not necessary. In addition, some features of URP (such as Post-Processing and HDR) are not supported in the plugin.</p>
 								</div><!--//content-->
 							</div><!--//callout-block-->
 						</section><!--//docs-intro-->
@@ -151,20 +152,20 @@
 					<section class="docs-section" id="gs-installation">
 						<h2 class="section-heading">Installation</h2>
 						<ul>
-							<li>Open created empty project.</li>
-							<li>Press <strong>'Assets'</strong> menu tab and from drop-down list, select option <strong>'Import Package'</strong>, from next drop-down, select option <strong>'Custom Package...'</strong></li>
+							<li>Open an empty project created.</li>
+							<li>Press <strong>'Assets'</strong> menu tab, select the <strong>'Import Package'</strong> option from the drop-down list, then select, the <strong>'Custom Package...'</strong> option from the next drop-down.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/1-Assets-ImportPackage-CustomPackage.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/1-Assets-ImportPackage-CustomPackage.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Select downloaded package and press <strong>'Open'</strong>.</li>
+							<li>Select the downloaded package and press <strong>'Open'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/2-PackageSelector.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/2-PackageSelector.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>In the left bottom corner of opened window press <strong>'All'</strong> and after that press <strong>'Import'</strong> button.</li>
+							<li>In the left bottom corner of the opened window press <strong>'All'</strong> then press the <strong>'Import'</strong> button.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/3-PackageContent.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-PackageContent.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -177,24 +178,23 @@
 
 					<section class="docs-section" id="gs-next-steps">
 						<h2 class="section-heading">Next Steps</h2>
-						<p>Now you can select wich feature you want to implement.</p>
+						<p>Now you can select the feature you want to implement.</p>
 						<ul>
-							<li><a class="scrollto" href="#s-targets-recognition">Targets Recognition</a> - for recognition and tracking of prepared images.</li>
-							<li><a class="scrollto" href="#s-targets-capture">Targets Capture</a> - for recognition and tracking targets defined by users in runtime.</li>
-							<li><a class="scrollto" href="#s-face-recognition">Face recognition</a> - for recognition the position of the face and facial expressions.</li>
-							<li><a class="scrollto" href="#s-surface-recognition">Surface recognition</a> - for surface recogntion.</li>
-							<li><a class="scrollto" href="#s-geolocation">AR Geolocation</a> - for tracking the direction and distance to geolocations based on the user's location.</li>
+							<li><a class="scrollto" href="#s-targets-recognition">Targets Recognition</a> to recognize and track prepared images.</li>
+							<li><a class="scrollto" href="#s-targets-capture">Targets Capture</a> to recognize and track targets defined by users in runtime.</li>
+							<li><a class="scrollto" href="#s-face-recognition">Face recognition</a> to recognize face positions and facial expressions.</li>
+							<li><a class="scrollto" href="#s-surface-recognition">Surface recognition</a> for surface recognition.</li>
+							<li><a class="scrollto" href="#s-geolocation">AR Geolocation</a> to track direction and distance to geolocations based on the user's location.</li>
 						</ul>
-						<p>Or if you have any question check <a class="scrollto" href="#section-9">FAQs</a> section.</p>
 					</section><!--//section-->
 				</article><!--//docs-article-->
 
 
 				<article class="docs-article" id="s-targets-recognition">
 					<header class="docs-header">
-						<h1 class="docs-heading">Targets Recognition</h1>
+						<h1 class="docs-heading">Target Recognition</h1>
 						<section class="docs-intro">
-							<p>Targets Tracking allows AR apps to detect, track, and augment 2D images. The Multiple Target functionality enables the tracking of more than one image at a time.</p>
+							<p>Target Tracking allows AR apps to detect, track, and augment 2D images. The Multiple Target functionality enables the tracking of more than one image at a time.</p>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -211,152 +211,146 @@
 					<section class="docs-section" id="tr-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'AR-Renderer'</strong>, from next drop-down list select <strong>'Targets Tracking'</strong> option.</li>
+							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select the <strong>'Targets Tracking'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-TargetsTrackingController.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-TargetsTrackingController.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li><strong>'TargetsController'</strong> game object has been created. As you can see there are some errors in console, but at this stage ignore them.</li>
+							<li>The <strong>'TargetsController'</strong> game object has been created. As you can see, there are some errors in the console, but at this stage we ignore them.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/5-TragetsTrackingCreated.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/5-TragetsTrackingCreated.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'AR-Renderer'</strong>, from next drop-down list select <strong>'Misc'</strong>, from next drop-down list select <strong>'Target'</strong> option.</li>
+							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select <strong>'Misc'</strong> from the next drop-down, after that select the <strong>'Target'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/6-TargetCreation.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/6-TargetCreation.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Set created target as child of <strong>'AR-Renderer-Scene'</strong> game object. After that select <strong>'TargetController'</strong> game object and in Inspector you can see <strong>'Target Track Controller (Script)'</strong> attached to it.</li>
-							<li>Drag and drop created target into <strong>'Targets'</strong> field of <strong>'Target Track Controller (Script)'</strong> component in Inspector. So now <strong>'Targets'</strong> field contains two targets.</li>
+							<li>Set the created target as the child of the <strong>'AR-Renderer-Scene'</strong> game object. After that, select the <strong>'TargetController'</strong> game object. In Inspector, you can see <strong>'Target Track Controller (Script)'</strong> attached to it.</li>
+							<li>Drag and drop the created target into the <strong>'Targets'</strong> field of the <strong>'Target Track Controller (Script)'</strong> component in Inspector. Now the <strong>'Targets'</strong> field contains two targets.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/7-TargetsDragAndDrop.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/7-TargetsDragAndDrop.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Assets/Compiler/Targets'</strong> folder and put your target image into this folder.</li>
+							<li>Navigate to the<strong>'Assets/Compiler/Targets'</strong> folder and put your target image into this folder.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/8-TargetsFolder.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/8-TargetsFolder.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now expand created target in Hierarchy and select <strong>'AR-Renderer-Target-Preview'</strong> game object. In Inspector you can see <strong>'Target Preview (Script)'</strong> attached to it.</li>
-							<li>Drag and drop your target image into <strong>'Image'</strong> field of <strong>'Target Preview (Script)'</strong> component. Your target image should appear in Scene view. You can use your target image in Scene view as real-world size reference.</li>
+							<li>Now expand the created target in Hierarchy and select the <strong>'AR-Renderer-Target-Preview'</strong> game object. In Inspector, you can see <strong>'Target Preview (Script)'</strong> attached to it.</li>
+							<li>Drag and drop your target image into the <strong>'Image'</strong> field of the <strong>'Target Preview (Script)'</strong> component. Your target image should appear in Scene view. You can use your target image in Scene view as real-world size reference.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/9-ImageAttach.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/9-ImageAttach.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>For now you can disable default target in Hierarchy.</li>
+							<li>You can disable the default target in Hierarchy for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/10-DefaultDisabled.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/10-DefaultDisabled.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>In Hierarchy expand created target and select <strong>'Displayer'</strong> game object. Set whatever you want to display as child of this game object. In my case it will be a sphere.</li>
+							<li>In Hierarchy expand the created target and select the <strong>'Displayer'</strong> game object. Set whatever you want to display as the child of this game object. In my case, it will be a default sphere.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/11-DisplayerSetup.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/11-DisplayerSetup.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Enable default target in Hierarchy if you disabled it earlier.</li>
+							<li>Enable the default target in Hierarchy if you disabled it earlier.</li>
 
-							<li>Save your scene. After that open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong> and add your scene to build.</li>
+							<li>Save your scene. Now open the <strong>'File'</strong> menu tab, select <strong>'Build Settings...'</strong> from drop-down list, and add your scene to build.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/14-SceneToBuild.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/14-SceneToBuild.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now when scene is ready we can proceed to <a href="#tr-targets-setup">Targets Setup</a> section.</li>
+							<li>Now that the scene is ready we can proceed to the <a href="#tr-targets-setup">Targets Setup</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
 					<section class="docs-section" id="tr-targets-setup">
-						<h2 class="section-heading">Targets Setup</h2>
+						<h2 class="section-heading">Target Setup</h2>
 						<ul>
-							<li>In Project overview window navigate to <strong>'Assets/Compiler'</strong> and press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'Show in Explorer'</strong> option.</li>
+							<li>In the Project overview window, navigate to <strong>'Assets/Compiler'</strong>, press <strong>'Righ mouse button (RMB)'</strong>, and select the <strong>'Show in Explorer'</strong> option from drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/12-ShowInExplorer.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/12-ShowInExplorer.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>In explorer window navigate to <strong>'.../Assets/Compiler'</strong> folder/ Here you can find <strong>'DotMindCompiler-win'</strong> for Windows, <strong>'DotMindCompiler-linux'</strong> for Linux and <strong>'DotMindCompiler-macos'</strong> for macOS. Run the file depending on your system. In my case it will be <strong>'DotMindCompiler-win'</strong></li>
+							<li>In the explorer window, navigate to the <strong>'.../Assets/Compiler'</strong> folder. Here you can find <strong>'DotMindCompiler-win'</strong> for Windows, <strong>'DotMindCompiler-linux'</strong> for Linux, or <strong>'DotMindCompiler-macos'</strong> for macOS. Run the file depending on your system. In my case, it will be <strong>'DotMindCompiler-win'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/13-dotMindCompiler.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/13-dotMindCompiler.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>In explorer window navigate to <strong>'.../Assets/Compiler'</strong> folder/ Here you can find <strong>'DotMindCompiler-win'</strong> for Windows, <strong>'DotMindCompiler-linux'</strong> for Linux and <strong>'DotMindCompiler-macos'</strong> for macOS. Run the file depending on your system. In my case it will be <strong>'DotMindCompiler-win'</strong></li>
-							<div class="simplelightbox-gallery row mb-3">
-								<div class="col-12 col-md-4 mb-3">
-									<a href="assets/images/15-CompilerAddress.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/15-CompilerAddress.PNG" alt="" title="CoderPro Home Page" /></a>
-								</div>
-							</div>
-							<li>The compiler page will automatically open in your browser. If this does not happen, go to the address from the console window.</li>
+							<li>Run it. The compiler page will automatically open in your browser. If not, follow to the address from the console window.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/16-CompilerPage.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/16-CompilerPage.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>As you can see this page is empty. Now we will fix it. Go back to Unity and in Hierarchy select <strong>'TargetController'</strong>. In Inspector press <strong>'Generate'</strong> button of <strong>'Target Track Controller (Script)'</strong> component. If everything is correct the log message will be appear in console. New scheme has been created and saved to <strong>'Assets/Compiler/Schemas'</strong> folder</li>
+							<li>As you can see, this page is empty. Now we will fix it. Go back to Unity and in Hierarchy select <strong>'TargetController'</strong>. In Inspector, press the <strong>'Generate'</strong> button of the <strong>'Target Track Controller (Script)'</strong> component. If everything is correct, the log message will appear in console. A new scheme has thus been created and saved to the <strong>'Assets/Compiler/Schemas'</strong> folder</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/17-SchemeCreated.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/17-SchemeCreated.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now go back to your browser and press <strong>'Refresh data'</strong> button. Now you can see all targets on all of your scenes.</li>
+							<li>Now go back to your browser and press the <strong>'Refresh data'</strong> button. Now you can see all targets on all of your scenes.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/18-CompilerPageFixed.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/18-CompilerPageFixed.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>On this page you can check if everything is okay and if so, press <strong>'Compile .mind file'</strong> button. TThe process will start and you will see the progress under the button.</li>
-							<li>When the comilation is finished, you will see <strong>'Done!'</strong> message. Instructions (targets_&#60;&#60;scene index&#62;&#62;.mind) file has been created and saved into your <strong>'Assets/Targets'</strong> folder.</li>
+							<li>On this page you can check if everything is okay. If so, press the <strong>'Compile .mind file'</strong> button. The process will run and you will see the progress under the button.</li>
+							<li>When the compilation is finished, you will see <strong>'Done!'</strong> message. The targets_&#60;&#60;scene index&#62;&#62;.mind file has been created and saved into your <strong>'Assets/Targets'</strong> folder.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/19-CompilationFinished.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/19-CompilationFinished.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
 							<li>Compiler's page and console window can be closed.</li>
-							<li>Now when targets are ready we can proceed to <a href="#tr-settings">Settings</a> section.</li>
+							<li>Now that targets are ready, we can proceed to the <a href="#tr-settings">Settings</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
 					<section class="docs-section" id="tr-settings">
 						<h2 class="section-heading">Settings</h2>
 						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong></li>
-							<li>Now switch build platform to <strong>WebGL</strong></li>
+							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
+							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to <strong>'Resolution and Presentation'</strong> tab. Select <strong>'AR-Renderer'</strong> WebGL Template.</li>
-							<li>If neccessary you can set <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). For now leave it empty.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/21-Template.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/21-Template.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Other Settings'</strong> tab.</li>
-							<li>Uncheck <strong>'Auto Graphic API'</strong></li>
-							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong></li>
+							<li>Navigate to the <strong>'Other Settings'</strong> tab.</li>
+							<li>Uncheck <strong>'Auto Graphic API'</strong>.</li>
+							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/22-TargetSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/22-TargetSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Publishing Settings'</strong> tab.</li>
-							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong></li>
+							<li>Navigate to the <strong>'Publishing Settings'</strong> tab.</li>
+							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#tr-build">Build</a> section.</li>
+							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
@@ -364,11 +358,11 @@
 						<h2 class="section-heading">Build</h2>
 						<p>Everything is ready. It's time to check how it works.</p>
 						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong>, in opened window press <strong>'Build'</strong> button. Select folder and save your build.</li>
-							<li>To run build locally you will need local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
-							<li>Download and unpack everything from <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to you build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux or <strong>'app-macos'</strong> for macOS)</li>
-							<li>Open address from the opened console window in browser on your phone.</li>
+							<li>Open the <strong>'File'</strong> menu tab, select <strong>'Build Settings...'</strong>  from drop-down list, then press the <strong>'Build'</strong> button in the opened window. Select a folder and save your build.</li>
+							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
+							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
+							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
+							<li>Open the address from the opened console window in the browser on your phone.</li>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -377,7 +371,7 @@
 										</span><!--//icon-holder-->
 										Note
 									</h4>
-									<p>At this moment only the Chrome browser on Android devices is fully supported.</p>
+									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
 								</div><!--//content-->
 							</div><!--//callout-block-->
 						</ul>
@@ -386,9 +380,9 @@
 
 				<article class="docs-article" id="s-targets-capture">
 					<header class="docs-header">
-						<h1 class="docs-heading">Targets Capture</h1>
+						<h1 class="docs-heading">Target Capture</h1>
 						<section class="docs-intro">
-							<p>Target tracking allows AR applications to detect, track, and augment 2D images captured by the user (e.g. credit card, sticker, etc.).</p>
+							<p>Target tracking allows AR applications to detect, track, and augment 2D images captured by a user (e.g. credit card, sticker, etc.).</p>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -405,83 +399,83 @@
 					<section class="docs-section" id="tc-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'AR-Renderer'</strong>, from next drop-down list select <strong>'Custom Target Tracking'</strong> option.</li>
+							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from the drop-down list select <strong>'AR-Renderer'</strong>, then select the <strong>'Custom Target Tracking'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/2-1CustomTargetTrackingCreation.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/2-1CustomTargetTrackingCreation.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>In Hierarchy expand <strong>'CustomTargetController'</strong>, after that expand <strong>'Target_1'</strong> and select <strong>'Displayer'</strong> game object. Set whatever you what to display as child of this game object. In my case it will be a cube.</li>
-							<li>You can use "checker" texture in Scene view as real-world size reference.</li>
+							<li>In Hierarchy expand <strong>'CustomTargetController'</strong>, then expand <strong>'Target_1'</strong> and select the <strong>'Displayer'</strong> game object. Set whatever you what to display as the child of this game object. In my case, it will be a cube.</li>
+							<li>You can use the "checker" texture in the Scene view as the real-world size reference.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/2-2Created target.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/2-2Created target.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Save your scene. After that open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong> and add your scene to build.</li>
+							<li>Save your scene. After that open the <strong>'File'</strong> menu tab, select <strong>'Build Settings...'</strong> from the drop-down list, and add your scene to the build.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/14-SceneToBuild.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/14-SceneToBuild.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#tc-ui-setup">UI Setup</a> section.</li>
+							<li>Now we can proceed to the <a href="#tc-ui-setup">UI Setup</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
 					<section class="docs-section" id="tc-ui-setup">
 						<h2 class="section-heading">UI Setup</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'UI'</strong>, from next drop-down list select <strong>'Button'</strong></li>
-							<li>Select created button and in Inspector find <strong>'On click ()'</strong> field of <strong>'Button'</strong> component.</li>
-							<li>Press the <strong>'+'</strong> sign, and an option will be created.</li>
+							<li>In the Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'UI'</strong> from the drop-down list, then select <strong>'Button'</strong> from the next drop-down list.</li>
+							<li>Select the created button and in the Inspector find the <strong>'On click ()'</strong> field of the <strong>'Button'</strong> component.</li>
+							<li>Press the <strong>'+'</strong> sign. An option will be created.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/2-3ButtonSetup.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/2-3ButtonSetup.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Drag and drop <strong>'CustomTargetController'</strong> game object from Hierarchy into <strong>'Object'</strong> field of created option. After that select <strong>'CustomTargetTrackController'</strong>, and from next drop-down list select <strong>'Capture Target ()'</strong></li>
+							<li>Drag and drop the <strong>'CustomTargetController'</strong> game object from Hierarchy into the <strong>'Object'</strong> field of the created option. Select <strong>'CustomTargetTrackController'</strong>, athen select <strong>'Capture Target ()'</strong> from next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/2-4Function selection.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/2-4Function selection.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#tc-settings">Settings</a> section.</li>
+							<li>Now we can proceed to the <a href="#tc-settings">Settings</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
 					<section class="docs-section" id="tc-settings">
 						<h2 class="section-heading">Settings</h2>
 						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong></li>
-							<li>Now switch build platform to <strong>WebGL</strong></li>
+							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
+							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to <strong>'Resolution and Presentation'</strong> tab. Select <strong>'AR-Renderer'</strong> WebGL Template.</li>
-							<li>If neccessary you can set <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). For now leave it empty.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/21-Template.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/21-Template.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Other Settings'</strong> tab.</li>
-							<li>Uncheck <strong>'Auto Graphic API'</strong></li>
-							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong></li>
+							<li>Navigate to the <strong>'Other Settings'</strong> tab.</li>
+							<li>Uncheck <strong>'Auto Graphic API'</strong>.</li>
+							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/22-TargetSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/22-TargetSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Publishing Settings'</strong> tab.</li>
-							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong></li>
+							<li>Navigate to the <strong>'Publishing Settings'</strong> tab.</li>
+							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#tc-build">Build</a> section.</li>
+							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
@@ -489,11 +483,11 @@
 						<h2 class="section-heading">Build</h2>
 						<p>Everything is ready. It's time to check how it works.</p>
 						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong>, in opened window press <strong>'Build'</strong> button. Select folder and save your build.</li>
-							<li>To run build locally you will need local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
-							<li>Download and unpack everything from <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to you build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux or <strong>'app-macos'</strong> for macOS)</li>
-							<li>Open address from the opened console window in browser on your phone.</li>
+							<li>Open the <strong>'File'</strong> menu tab, select <strong>'Build Settings...'</strong> from the drop-down list, in the opened window press the <strong>'Build'</strong> button. Select a folder and save your build.</li>
+							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
+							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
+							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
+							<li>Open the address from the opened console window in the browser on your phone.</li>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -502,7 +496,7 @@
 										</span><!--//icon-holder-->
 										Note
 									</h4>
-									<p>At this moment only the Chrome browser on Android devices is fully supported.</p>
+									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
 								</div><!--//content-->
 							</div><!--//callout-block-->
 							<li>Take a photo of your target image with the button you created earlier. For example, it can be a business card.</li>
@@ -514,7 +508,7 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">Face Recognition</h1>
 						<section class="docs-intro">
-							<p>AR Face Recognition lets you render digital 3D content over human faces and recognize their facial expressions to use in the blendshapes system to animate 3D models.</p>
+							<p>AR Face Recognition allows you to render digital 3D content over human faces and recognize their facial expressions to use in the blendshapes system to animate 3D models.</p>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -531,7 +525,7 @@
 					<section class="docs-section" id="fr-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'AR-Renderer'</strong>, from next drop-down list select <strong>'Custom Target Tracking'</strong> option.</li>
+							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select the <strong>'Custom Target Tracking'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/5-1-FaceTracking.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/5-1-FaceTracking.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -552,19 +546,19 @@
 					<section class="docs-section" id="fr-blendshapes">
 						<h2 class="section-heading">Blendshapes</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'AR-Renderer'</strong>, from next drop-down list select <strong>'Misc'</strong>, from next drop-down list select <strong>'BlendShapesSystem'</strong> option.</li>
+							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select <strong>'Misc'</strong> from the next drop-down list, after that select the <strong>'BlendShapesSystem'</strong> option from the last drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/5-3-Blendshapes.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/5-3-Blendshapes.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>In Hierarchy select <strong>'FaceController'</strong>. Drag and drop created <strong>'BlendShapeSystem'</strong> into <strong>'AR Blend Shape Controller'</strong> field and enable <strong>'Use Blend Shapes'</strong> option in Inspector.</li>
+							<li>In Hierarchy, select <strong>'FaceController'</strong>. Drag and drop created <strong>'BlendShapeSystem'</strong> into the <strong>'AR Blend Shape Controller'</strong> field and enable the <strong>'Use Blend Shapes'</strong> option in Inspector.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/5-4-EnableBlendshapes.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/5-4-EnableBlendshapes.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Done, now you need to create a script that will contain all the settings for this model, you can use the prepared script <strong>'Demo Face Tracking'</strong> located in <strong>'Assests/AR-Renderer/Scripts'</strong> folder and the settings for it you will find on the demo scene <strong>'FaceTrackingBlendShapesExample'</strong>.</li>
+							<li>Done. Now you need to create a script that will contain all the settings for this model. You can use the prepared script <strong>'Demo Face Tracking'</strong> located in the <strong>'Assests/AR-Renderer/Scripts'</strong> folder. You will find the settings for it on the demo scene <strong>'FaceTrackingBlendShapesExample'</strong>.</li>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -574,58 +568,60 @@
 										Note
 									</h4>
 									<p>
-										Note that in the sample scene all blendshapes that can be processed are set up, if you don't like the performance of a particular blendshape you can try to change the points used there, or the multiplier. But if you are happy with the configuration you can copy all the settings into your script or use the demo script.
+										Note that in the sample scene all blendshapes that can be processed are set up. If you don't like the performance of a particular blendshape, you can try to change the points used there, or the multiplier. But if you are satisfied with the configuration, you can copy all the settings into your script or use the demo script.
 									</p>
 								</div><!--//content-->
 							</div><!--//callout-block-->
 							<li>For more detailed information check <strong>'Blendshapes_Readme'</strong> file located in <strong>'Assets/AR-Renderer/Docs'</strong> folder.</li>
-							<li>Now we can proceed to <a href="#fr-settings">Settings</a> section.</li>
+							<li>Now we can proceed to the <a href="#fr-settings">Settings</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
 					<section class="docs-section" id="fr-settings">
 						<h2 class="section-heading">Settings</h2>
 						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong></li>
-							<li>Now switch build platform to <strong>WebGL</strong></li>
+							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
+							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to <strong>'Resolution and Presentation'</strong> tab. Select <strong>'AR-Renderer'</strong> WebGL Template.</li>
-							<li>If neccessary you can set <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). For now leave it empty.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/21-Template.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/21-Template.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Other Settings'</strong> tab.</li>
-							<li>Uncheck <strong>'Auto Graphic API'</strong></li>
-							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong></li>
+							<li>Navigate to the <strong>'Other Settings'</strong> tab.</li>
+							<li>Uncheck <strong>'Auto Graphic API'</strong>.</li>
+							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/22-TargetSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/22-TargetSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Publishing Settings'</strong> tab.</li>
-							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong></li>
+							<li>Navigate to the <strong>'Publishing Settings'</strong> tab.</li>
+							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#fr-build">Build</a> section.</li>
-						</ul>					</section><!--//section-->
+							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
+						</ul>
+					</section><!--//section-->
+
 					<section class="docs-section" id="fr-build">
 						<h2 class="section-heading">Build</h2>
 						<p>Everything is ready. It's time to check how it works.</p>
 						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong>, in opened window press <strong>'Build'</strong> button. Select folder and save your build.</li>
-							<li>To run build locally you will need local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
-							<li>Download and unpack everything from <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to you build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux or <strong>'app-macos'</strong> for macOS)</li>
-							<li>Open address from the opened console window in browser on your phone.</li>
+							<li>Open the <strong>'File'</strong> menu tab, select <strong>'Build Settings...'</strong> from the drop-down list, in the opened window press the <strong>'Build'</strong> button. Select a folder and save your build.</li>
+							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
+							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
+							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
+							<li>Open the address from the opened console window in the browser on your phone.</li>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -634,7 +630,7 @@
 										</span><!--//icon-holder-->
 										Device Support
 									</h4>
-									<p>At this moment only the Chrome browser on Android devices is fully supported.</p>
+									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
 								</div><!--//content-->
 							</div><!--//callout-block-->
 						</ul>
@@ -663,13 +659,13 @@
 					<section class="docs-section" id="sr-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'AR-Renderer'</strong>, from next drop-down list select <strong>'Markers Tracking'</strong> option.</li>
+							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select the <strong>'Markers Tracking'</strong> option from the next drop-down list.</li>							
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/3-1-MarkersTracking.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-1-MarkersTracking.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>To test surface recognition we have to do some preparations. Navigate to <strong>'Assets/AR-Renderer/Scripts'</strong>. Now select <strong>'MarkerController'</strong> game object and drag and drop <strong>'ObjectSpawner'</strong> script from <strong>'Assets/AR-Renderer/Scripts'</strong> folder into Inspector window.</li>
+							<li>To test surface recognition, we have to do some preparations. Navigate to <strong>'Assets/AR-Renderer/Scripts'</strong>. Now select the <strong>'MarkerController'</strong> game object and drag and drop the <strong>'ObjectSpawner'</strong> script from the <strong>'Assets/AR-Renderer/Scripts'</strong> folder into the Inspector window.</li>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -678,7 +674,7 @@
 										</span><!--//icon-holder-->
 										Note
 									</h4>
-									<p>This controller uses the user's device to move the camera around the Unity scene. If you want to use this option instead of surface recognition, replace the <strong>HitPoint</strong> game object with an empty game object (Don't forget to set it into <strong>'Hit Point'</strong> field of <strong>'MarkerController'</strong> game object's, <strong>'MarkerTrackController (Script)'</strong> component). To test it place some game objects on the scene. In my case ii will be several primitives. After that you can proceed to <a href="#sr-settings">Settings</a> section.</p>
+									<p>This controller uses the user's device to move the camera around the Unity scene. If you want to use this option instead of surface recognition, replace the <strong>HitPoint</strong> game object with an empty game object (Don't forget to set it into the <strong>'Hit Point'</strong> field of the <strong>'MarkerController'</strong> game object's, the <strong>'MarkerTrackController (Script)'</strong> component). To test it, place some game objects on the scene. In my case, these will be several primitives. After that, you can proceed to the <a href="#sr-settings">Settings</a> section.</p>
 									<div class="simplelightbox-gallery row mb-3">
 										<div class="col-12 col-md-4 mb-3">
 											<a href="assets/images/3-6-Primitives.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-6-Primitives.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -686,70 +682,70 @@
 									</div>
 								</div><!--//content-->
 							</div><!--//callout-block-->
-							<li>Create prefab and drag and drop it into <strong>'Prefab'</strong> field of the <strong>'Object Spawner (Script)'</strong> component. In my case it will be the default cube.</li>
+							<li>Create a prefab and drag and drop it into the <strong>'Prefab'</strong> field of the <strong>'Object Spawner (Script)'</strong> component. In my case, it will be the default cube.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/3-3-CubePrefab.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-3-CubePrefab.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#sr-ui-setup">UI Setup</a> section.</li>
+							<li>Now we can proceed to the <a href="#sr-ui-setup">UI Setup</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
 					<section class="docs-section" id="sr-ui-setup">
 						<h2 class="section-heading">UI Setup</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'UI'</strong>, from next drop-down list select <strong>'Button'</strong></li>
-							<li>Select created button and in Inspector find <strong>'On click ()'</strong> field of <strong>'Button'</strong> component.</li>
+							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'UI'</strong> from the drop-down list, then select <strong>'Button'</strong> from the next drop-down list.</li>
+							<li>Select the created button and in Inspector find the <strong>'On click ()'</strong> field of the <strong>'Button'</strong> component.</li>
 							<li>Press the <strong>'+'</strong> sign, and an option will be created.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/3-4-ButtonSetup.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-4-ButtonSetup.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Drag and drop <strong>'MarkerController'</strong> game object from Hierarchy into <strong>'Object'</strong> field of created option. After that select <strong>'ObjectSpawner'</strong>, and from next drop-down list select <strong>'Spawn Object ()'</strong></li>
+							<li>Drag and drop the <strong>'MarkerController'</strong> game object from Hierarchy into the <strong>'Object'</strong> field of the created option. Select <strong>'ObjectSpawner'</strong>, and then select <strong>'Spawn Object ()'</strong> from the drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/3-5-FunctionSelection.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-5-FunctionSelection.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#sr-settings">Settings</a> section.</li>
+							<li>Now we can proceed to the <a href="#sr-settings">Settings</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
 					<section class="docs-section" id="sr-settings">
 						<h2 class="section-heading">Settings</h2>
 						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong></li>
-							<li>Now switch build platform to <strong>WebGL</strong></li>
+							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
+							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to <strong>'Resolution and Presentation'</strong> tab. Select <strong>'AR-Renderer'</strong> WebGL Template.</li>
-							<li>If neccessary you can set <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). For now leave it empty.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/21-Template.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/21-Template.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Other Settings'</strong> tab.</li>
-							<li>Uncheck <strong>'Auto Graphic API'</strong></li>
-							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong></li>
+							<li>Navigate to the <strong>'Other Settings'</strong> tab.</li>
+							<li>Uncheck <strong>'Auto Graphic API'</strong>.</li>
+							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/22-TargetSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/22-TargetSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Publishing Settings'</strong> tab.</li>
-							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong></li>
+							<li>Navigate to the <strong>'Publishing Settings'</strong> tab.</li>
+							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#sr-build">Build</a> section.</li>
+							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
@@ -758,10 +754,10 @@
 						<p>Everything is ready. It's time to check how it works.</p>
 						<ul>
 							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong>, in opened window press <strong>'Build'</strong> button. Select folder and save your build.</li>
-							<li>To run build locally you will need local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
-							<li>Download and unpack everything from <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to you build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux or <strong>'app-macos'</strong> for macOS)</li>
-							<li>Open address from the opened console window in browser on your phone.</li>
+							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
+							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
+							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
+							<li>Open the address from the opened console window in the browser on your phone.</li>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -770,7 +766,7 @@
 										</span><!--//icon-holder-->
 										Note
 									</h4>
-									<p>At this moment only the Chrome browser on Android devices is fully supported.</p>
+									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
 								</div><!--//content-->
 							</div><!--//callout-block-->
 							<div class="callout-block callout-block-danger me-1">
@@ -810,81 +806,81 @@
 					<section class="docs-section" id="g-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'AR-Renderer'</strong>, from next drop-down list select <strong>'Geolocation Tracking'</strong> option.</li>
+							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select the <strong>'Geolocation Tracking'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-1-GeolocationController.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-1-GeolocationController.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>It's time to add locations. In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from drop-down list select <strong>'AR-Renderer'</strong>, from next drop-down list select <strong>'Misc'</strong>, from next drop-down list select <strong>'Location'</strong> and <strong>Arrow</strong> options.</li>
+							<li>It's time to add locations. In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select <strong>'Misc'</strong> from the next drop-down list, at last select the <strong>'Location'</strong> and <strong>'Arrow'</strong> options from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-2-LocationAndArrow.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-2-LocationAndArrow.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>In Hierarchy expand <strong>'GeolocationController'</strong> and set created <strong>'GeolocationLocation'</strong> game object as child of <strong>'Locations'</strong> game object.</li>
+							<li>In Hierarchy, expand <strong>'GeolocationController'</strong> and set the created <strong>'GeolocationLocation'</strong> game object as the child of the <strong>'Locations'</strong> game object.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-3-LocationParent.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-3-LocationParent.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Expand <strong>'ND'</strong> game object and set created <strong>'GeolocationArrow'</strong> game object as child of <strong>'Arrows'</strong> game object.</li>
+							<li>Expand the <strong>'ND'</strong> game object and set the created <strong>'GeolocationArrow'</strong> game object as the child of the <strong>'Arrows'</strong> game object.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-4-ArrowParent.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-4-ArrowParent.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Drag and drop created <strong>'GeolocationLocation'</strong> into <strong>'Location'</strong> field of created <strong>'GeolocationArrow'</strong> game object, <strong>'Arrow (Script)'</strong> component.</li>
+							<li>Drag and drop created <strong>'GeolocationLocation'</strong> into the <strong>'Location'</strong> field of the created <strong>'GeolocationArrow'</strong> game object, the <strong>'Arrow (Script)'</strong> component.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-5-LocationToArrow.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-5-LocationToArrow.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Select created location and set <strong>'name'</strong>, <strong>'latitude'</strong>, <strong>'longitude'</strong> and if you want to use altitude set <strong>altitude</strong> and <strong>'Use Altitude'</strong> boolean to <strong>'true'</strong>)</li>
-							<li>Also you can set whatever you want to display as child of created location. In this case game object will appear at your location coordinates.</li>
+							<li>Select the created location and set <strong>'name'</strong>, <strong>'latitude'</strong>, <strong>'longitude'</strong>. If you want to use altitude, set <strong>altitude</strong> and <strong>'Use Altitude'</strong> boolean to <strong>'true'</strong>).</li>
+							<li>Also, you can set whatever you want to display as the child of the created location. In this case, the game object will appear at your location coordinates.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-6-LocationSetup.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-6-LocationSetup.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Select <strong>'LocationManager'</strong> and drag and drop created location into <strong>'Locations'</strong> field and created arrow int <strong>'Arrows'</strong> field in Inspector.</li>
-							<li>Now we can proceed to <a href="#g-settings">Settings</a> section.</li>
+							<li>Select <strong>'LocationManager'</strong> and drag and drop the created location into the <strong>'Locations'</strong> field and the created arrow into the <strong>'Arrows'</strong> field in Inspector.</li>
+							<li>Now we can proceed to the <a href="#g-settings">Settings</a> section.</li>
 						</ul>
 			</section><!--//section-->
 
 					<section class="docs-section" id="g-settings">
 						<h2 class="section-heading">Settings</h2>
 						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong></li>
-							<li>Now switch build platform to <strong>WebGL</strong></li>
+							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
+							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to <strong>'Resolution and Presentation'</strong> tab. Select <strong>'AR-Renderer'</strong> WebGL Template.</li>
-							<li>If neccessary you can set <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). For now leave it empty.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/21-Template.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/21-Template.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Other Settings'</strong> tab.</li>
-							<li>Uncheck <strong>'Auto Graphic API'</strong></li>
-							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong></li>
+							<li>Navigate to the <strong>'Other Settings'</strong> tab.</li>
+							<li>Uncheck <strong>'Auto Graphic API'</strong>.</li>
+							<li>Set <strong>'Lightmap Encoding'</strong> to <strong>'Normal Quality'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/22-TargetSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/22-TargetSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Navigate to <strong>'Publishing Settings'</strong> tab.</li>
-							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong></li>
+							<li>Navigate to the <strong>'Publishing Settings'</strong> tab.</li>
+							<li>Set <strong>'Compression Format'</strong> to <strong>'Disabled'</strong>.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#g-build">Build</a> section.</li>
+							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
@@ -893,10 +889,10 @@
 						<p>Everything is ready. It's time to check how it works.</p>
 						<ul>
 							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong>, in opened window press <strong>'Build'</strong> button. Select folder and save your build.</li>
-							<li>To run build locally you will need local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
-							<li>Download and unpack everything from <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to you build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux or <strong>'app-macos'</strong> for macOS)</li>
-							<li>Open address from the opened console window in browser on your phone.</li>
+							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1R9zPmaM6KsqhXvamSpByHV__RonOHN04/view?usp=share_link">here.</a></li>
+							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
+							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
+							<li>Open the address from the opened console window in the browser on your phone.</li>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -905,7 +901,7 @@
 										</span><!--//icon-holder-->
 										Note
 									</h4>
-									<p>At this moment only the Chrome browser on Android devices is fully supported.</p>
+									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
 								</div><!--//content-->
 							</div><!--//callout-block-->
 							<div class="callout-block callout-block-danger me-1">
