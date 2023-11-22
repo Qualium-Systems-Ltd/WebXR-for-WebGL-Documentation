@@ -46,41 +46,38 @@
 
 					<!--Getting Started-->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#s-getting-started"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Getting Started</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#gs-installation">Installation</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#gs-preparations">Preparations</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#gs-dotMindCompiler">Dot mind compiler</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#gs-localDebug">Local debug</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#gs-next-steps">Next Steps</a></li>
 
 					<!--Targets Recognition-->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#s-targets-recognition"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Targets Recognition</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#tr-scene-setup">Scene Setup</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#tr-targets-setup">Targets setup</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#tr-settings">Settings</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#tr-build">Build</a></li>
 
 					<!--Custom Targets Recognition-->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#s-targets-capture"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Targets Capture</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#tc-scene-setup">Scene Setup</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#tc-ui-setup">UI Setup</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#tc-settings">Settings</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#tc-build">Build</a></li>
 
 					<!--Face Recognition-->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#s-face-recognition"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Face Recognition</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#fr-scene-setup">Scene Setup</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#fr-blendshapes">Blendshapes</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#fr-settings">Settings</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#fr-build">Build</a></li>
 
 					<!--Surface Recognition-->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#s-surface-recognition"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Surface Recognition</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#sr-scene-setup">Scene Setup</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#sr-ui-setup">UI Setup</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#sr-settings">Settings</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#sr-build">Build</a></li>
 
 					<!--Geolocation-->
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#s-geolocation"><span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>AR Geolocation</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#g-scene-setup">Scene Setup</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#g-settings">Settings</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#g-build">Build</a></li>
 				</ul>
 
@@ -126,6 +123,7 @@
 					<section class="docs-section" id="dependencies">
 						<h2 class="section-heading">Dependencies</h2>
 						<p>Plugin is based on <strong><a href="https://github.com/hiukim/mind-ar-js">MindAR</a></strong> and <strong><a href="https://threejs.org/">Three.js</a></strong></p>
+						<p>Also for local debug server and dot mind compiler <strong><a href="https://nodejs.org/en/">NodeJS</a></strong> required</p>
 					</section><!--//section-->
 
 				</article>
@@ -134,7 +132,7 @@
 					<header class="docs-header">
 						<h1 class="docs-heading">Getting Started</h1>
 						<section class="docs-intro">
-							<p>To use the WebXR for WebGL plugin, you will need to download the latest release package from Github [<a href="https://github.com/Qualium-Systems-Ltd/WebXR-for-WebGL/releases/">https://github.com/Qualium-Systems-Ltd/WebXR-for-WebGL/releases/</a>] and import it to the empty Unity project.</p>
+							<p>To use the WebXR for WebGL plugin, you will need to download the latest release package from <strong><a href="https://github.com/Qualium-Systems-Ltd/WebXR-for-WebGL/releases/">Github</a></strong> or <strong><a href="https://assetstore.unity.com/packages/tools/utilities/webxr-plugin-241842">Unity Asset Store</a></strong> and import it to the empty Unity project.</p>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -149,30 +147,50 @@
 						</section><!--//docs-intro-->
 					</header>
 
-					<section class="docs-section" id="gs-installation">
-						<h2 class="section-heading">Installation</h2>
+					<!--TODO-->
+					<section class="docs-section" id="gs-preparations">
+						<h2 class="section-heading">Preparations</h2>
+						<p>After installing the plugin (from the Asset store or as a package), <strong>"Qualium-Systems"</strong> and <strong>"WebGLTemplates"</strong> folders will appear in the Assets folder. Then in top left menu press <strong>WebXR Plugin -> Unpack utils</strong></p>
+						<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/0_FirstSteps.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/0_FirstSteps.png" alt="" title="CoderPro Home Page" /></a>
+							</div>
+						</div>
+						<p>It will create <strong>"WebXRPlugin"</strong> folder in the root of your project.</p>
+						<div class="simplelightbox-gallery row mb-3">
+							<div class="col-12 col-md-4 mb-3">
+								<a href="assets/images/0_FirstSteps2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/0_FirstSteps2.png" alt="" title="CoderPro Home Page" /></a>
+							</div>
+						</div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="gs-dotMindCompiler">
+						<h2 class="section-heading">Dot Mind Compiler</h2>
+						<p>In case if you will create <a class="scrollto" href="#s-targets-recognition">Targets Recognition</a> application you should prepare Dot Mind Compiler</p>
 						<ul>
-							<li>Open an empty project created.</li>
-							<li>Press <strong>'Assets'</strong> menu tab, select the <strong>'Import Package'</strong> option from the drop-down list, then select, the <strong>'Custom Package...'</strong> option from the next drop-down.</li>
+							<li>Make sure NodeJS is installed.</li>
+							<li>Go to root directory of your project. Then go to  <strong>WebXRPlugin/Compiler</strong></li>
+							<li>Double click on <strong>Compile.sh</strong> bash script.</li>
+							<li>After compilation new files will be created in the folder.</li>
+							<li>Depends on your system you need <strong>DotMindCompiler-win.exe</strong> for Windows, <strong>DotMindCompiler-linux</strong> for Linux or <strong>DotMindCompiler-macos</strong> for macOS.</li>
+						</ul>
+					</section><!--//section-->
+
+					<section class="docs-section" id="gs-localDebug">
+						<h2 class="section-heading">Local debug</h2>
+						<p>In case if you want to create local https server for debugging you can compile it.</p>
+						<ul>
+							<li>Make sure NodeJS is installed.</li>
+							<li>Go to root directory of your project. Then go to  <strong>WebXRPlugin/local_debug</strong></li>
+							<li>Double click on <strong>Compile.sh</strong> bash script.</li>
+							<li>After compilation new files will be created in the folder.</li>
+							<li>Depends on your system you need <strong>app-win.exe</strong> for Windows, <strong>app-linux</strong> for Linux or <strong>app-macos</strong> for macOS. After you make the build, copy and paste the file you need into the root of the build folder.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
-									<a href="assets/images/1-Assets-ImportPackage-CustomPackage.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/1-Assets-ImportPackage-CustomPackage.PNG" alt="" title="CoderPro Home Page" /></a>
+									<a href="assets/images/0-FirstSteps3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/0-FirstSteps3.png" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Select the downloaded package and press <strong>'Open'</strong>.</li>
-							<div class="simplelightbox-gallery row mb-3">
-								<div class="col-12 col-md-4 mb-3">
-									<a href="assets/images/2-PackageSelector.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/2-PackageSelector.PNG" alt="" title="CoderPro Home Page" /></a>
-								</div>
-							</div>
-							<li>In the left bottom corner of the opened window press <strong>'All'</strong> then press the <strong>'Import'</strong> button.</li>
-							<div class="simplelightbox-gallery row mb-3">
-								<div class="col-12 col-md-4 mb-3">
-									<a href="assets/images/3-PackageContent.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-PackageContent.PNG" alt="" title="CoderPro Home Page" /></a>
-								</div>
-							</div>
-							<li>Wait for the import process to finish.</li>
-							<li>Done.</li>
+							<li>Run the file that you pasted into the build folder and open the address from the opened console window in the browser on your phone.</li>
 						</ul>
 					</section><!--//section-->
 
@@ -211,7 +229,7 @@
 					<section class="docs-section" id="tr-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select the <strong>'Targets Tracking'</strong> option from the next drop-down list.</li>
+							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'WebXR Plugin'</strong> from the drop-down list, then select the <strong>'Targets Tracking'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-TargetsTrackingController.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-TargetsTrackingController.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -223,7 +241,7 @@
 									<a href="assets/images/5-TragetsTrackingCreated.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/5-TragetsTrackingCreated.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select <strong>'Misc'</strong> from the next drop-down, after that select the <strong>'Target'</strong> option from the next drop-down list.</li>
+							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'WebXR Plugin'</strong> from the drop-down list, then select <strong>'Misc'</strong> from the next drop-down, after that select the <strong>'Target'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/6-TargetCreation.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/6-TargetCreation.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -242,7 +260,7 @@
 									<a href="assets/images/8-TargetsFolder.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/8-TargetsFolder.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now expand the created target in Hierarchy and select the <strong>'AR-Renderer-Target-Preview'</strong> game object. In Inspector, you can see <strong>'Target Preview (Script)'</strong> attached to it.</li>
+							<li>Now expand the created target in Hierarchy and select the <strong>'WebXR Plugin-Target-Preview'</strong> game object. In Inspector, you can see <strong>'Target Preview (Script)'</strong> attached to it.</li>
 							<li>Drag and drop your target image into the <strong>'Image'</strong> field of the <strong>'Target Preview (Script)'</strong> component. Your target image should appear in Scene view. You can use your target image in Scene view as real-world size reference.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
@@ -276,19 +294,7 @@
 					<section class="docs-section" id="tr-targets-setup">
 						<h2 class="section-heading">Target Setup</h2>
 						<ul>
-							<li>In the Project overview window, navigate to <strong>'Assets/Compiler'</strong>, press <strong>'Righ mouse button (RMB)'</strong>, and select the <strong>'Show in Explorer'</strong> option from drop-down list.</li>
-							<div class="simplelightbox-gallery row mb-3">
-								<div class="col-12 col-md-4 mb-3">
-									<a href="assets/images/12-ShowInExplorer.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/12-ShowInExplorer.PNG" alt="" title="CoderPro Home Page" /></a>
-								</div>
-							</div>
-							<li>Visit <a href="https://github.com/Qualium-Systems-Ltd/WebXR-for-WebGL-Documentation/tree/master/r_DotMindCompiler">this</a> repository. Here you can find <strong>'DotMindCompiler-win'</strong> for Windows, <strong>'DotMindCompiler-linux'</strong> for Linux, or <strong>'DotMindCompiler-macos'</strong> for macOS. Download the file depending on your system. In my case, it will be <strong>'DotMindCompiler-win'</strong>, and place it into the <strong>'.../Assets/Compiler'</strong> folder of your project.</li>
-							<div class="simplelightbox-gallery row mb-3">
-								<div class="col-12 col-md-4 mb-3">
-									<a href="assets/images/13-dotMindCompiler.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/13-dotMindCompiler.PNG" alt="" title="CoderPro Home Page" /></a>
-								</div>
-							</div>
-							<li>Run it. The compiler page will automatically open in your browser. If not, follow to the address from the console window.</li>
+							<li>Run <a class="scrollto" href="#gs-dotMindCompiler">Dot Mind Compiler</a> and follow to the address from the console window.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/16-CompilerPage.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/16-CompilerPage.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -314,12 +320,12 @@
 								</div>
 							</div>
 							<li>Compiler's page and console window can be closed.</li>
-							<li>Now that targets are ready, we can proceed to the <a href="#tr-settings">Settings</a> section.</li>
+							<li>Now that targets are ready, we can proceed to the <a href="#tr-build">Build</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
-					<section class="docs-section" id="tr-settings">
-						<h2 class="section-heading">Settings</h2>
+					<section class="docs-section" id="tr-build">
+						<h2 class="section-heading">Build</h2>
 						<ul>
 							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
 							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
@@ -328,7 +334,7 @@
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'WebXR Plugin'</strong> WebGL Template.</li>
 							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
@@ -350,30 +356,9 @@
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
-						</ul>
-					</section><!--//section-->
-
-					<section class="docs-section" id="tr-build">
-						<h2 class="section-heading">Build</h2>
-						<p>Everything is ready. It's time to check how it works.</p>
-						<ul>
-							<li>Open the <strong>'File'</strong> menu tab, select <strong>'Build Settings...'</strong>  from drop-down list, then press the <strong>'Build'</strong> button in the opened window. Select a folder and save your build.</li>
-							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1IcQZVtWqH686lsm1iscCW20P3X4CHjJe/view?usp=drive_link">here.</a></li>
-							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
-							<li>Open the address from the opened console window in the browser on your phone.</li>
-							<div class="callout-block callout-block-info">
-								<div class="content">
-									<h4 class="callout-title">
-										<span class="callout-icon-holder me-1">
-											<i class="fas fa-info-circle"></i>
-										</span><!--//icon-holder-->
-										Note
-									</h4>
-									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
-								</div><!--//content-->
-							</div><!--//callout-block-->
+							<li>Close settings window.</li>
+							<li>Open the 'File' menu tab, select 'Build Settings...' from the drop-down list, in the opened window press the 'Build' button. Select a folder and save your build.</li>
+							<li>Now we can proceed to the <a href="#gs-localDebug">Local Debug</a> section.</li>
 						</ul>
 					</section><!--//section-->
 				</article><!--//docs-article-->
@@ -399,7 +384,7 @@
 					<section class="docs-section" id="tc-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from the drop-down list select <strong>'AR-Renderer'</strong>, then select the <strong>'Custom Target Tracking'</strong> option from the next drop-down list.</li>
+							<li>In Hierarchy press <strong>'Righ mouse button (RMB)'</strong>, from the drop-down list select <strong>'WebXR Plugin'</strong>, then select the <strong>'Custom Target Tracking'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/2-1CustomTargetTrackingCreation.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/2-1CustomTargetTrackingCreation.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -439,12 +424,12 @@
 									<a href="assets/images/2-4Function selection.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/2-4Function selection.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to the <a href="#tc-settings">Settings</a> section.</li>
+							<li>Now we can proceed to the <a href="#tc-build">Build</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
-					<section class="docs-section" id="tc-settings">
-						<h2 class="section-heading">Settings</h2>
+					<section class="docs-section" id="tc-build">
+						<h2 class="section-heading">Build</h2>
 						<ul>
 							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
 							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
@@ -453,7 +438,7 @@
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'WebXR Plugin'</strong> WebGL Template.</li>
 							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
@@ -475,31 +460,9 @@
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
-						</ul>
-					</section><!--//section-->
-
-					<section class="docs-section" id="tc-build">
-						<h2 class="section-heading">Build</h2>
-						<p>Everything is ready. It's time to check how it works.</p>
-						<ul>
-							<li>Open the <strong>'File'</strong> menu tab, select <strong>'Build Settings...'</strong> from the drop-down list, in the opened window press the <strong>'Build'</strong> button. Select a folder and save your build.</li>
-							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1IcQZVtWqH686lsm1iscCW20P3X4CHjJe/view?usp=drive_link">here.</a></li>
-							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
-							<li>Open the address from the opened console window in the browser on your phone.</li>
-							<div class="callout-block callout-block-info">
-								<div class="content">
-									<h4 class="callout-title">
-										<span class="callout-icon-holder me-1">
-											<i class="fas fa-info-circle"></i>
-										</span><!--//icon-holder-->
-										Note
-									</h4>
-									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
-								</div><!--//content-->
-							</div><!--//callout-block-->
-							<li>Take a photo of your target image with the button you created earlier. For example, it can be a business card.</li>
+							<li>Close settings window.</li>
+							<li>Open the 'File' menu tab, select 'Build Settings...' from the drop-down list, in the opened window press the 'Build' button. Select a folder and save your build.</li>
+							<li>Now we can proceed to the <a href="#gs-localDebug">Local Debug</a> section.</li>
 						</ul>
 					</section><!--//section-->
 				</article><!--//docs-article-->
@@ -525,7 +488,7 @@
 					<section class="docs-section" id="fr-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select the <strong>'Custom Target Tracking'</strong> option from the next drop-down list.</li>
+							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'WebXR Plugin'</strong> from the drop-down list, then select the <strong>'Custom Target Tracking'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/5-1-FaceTracking.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/5-1-FaceTracking.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -538,7 +501,7 @@
 									<a href="assets/images/5-2-FaceMesh.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/5-2-FaceMesh.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to <a href="#fr-settings">Settings</a> section to test our build, or proceed to <a href="#fr-blendshapes">Blendshapes</a> section to learn more about the blendshapes system.</li>
+							<li>Now we can proceed to <a href="#fr-settings">Build</a> section to test our build, or proceed to <a href="#fr-blendshapes">Blendshapes</a> section to learn more about the blendshapes system.</li>
 
 						</ul>
 					</section><!--//section-->
@@ -546,7 +509,7 @@
 					<section class="docs-section" id="fr-blendshapes">
 						<h2 class="section-heading">Blendshapes</h2>
 						<ul>
-							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select <strong>'Misc'</strong> from the next drop-down list, after that select the <strong>'BlendShapesSystem'</strong> option from the last drop-down list.</li>
+							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'WebXR Plugin'</strong> from the drop-down list, then select <strong>'Misc'</strong> from the next drop-down list, after that select the <strong>'BlendShapesSystem'</strong> option from the last drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/5-3-Blendshapes.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/5-3-Blendshapes.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -558,7 +521,7 @@
 									<a href="assets/images/5-4-EnableBlendshapes.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/5-4-EnableBlendshapes.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Done. Now you need to create a script that will contain all the settings for this model. You can use the prepared script <strong>'Demo Face Tracking'</strong> located in the <strong>'Assests/AR-Renderer/Scripts'</strong> folder. You will find the settings for it on the demo scene <strong>'FaceTrackingBlendShapesExample'</strong>.</li>
+							<li>Done. Now you need to create a script that will contain all the settings for this model. You can use the prepared script <strong>'Demo Face Tracking'</strong> located in the <strong>'Assests/WebXR Plugin/Scripts'</strong> folder. You will find the settings for it on the demo scene <strong>'FaceTrackingBlendShapesExample'</strong>.</li>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -572,13 +535,13 @@
 									</p>
 								</div><!--//content-->
 							</div><!--//callout-block-->
-							<li>For more detailed information check <strong>'Blendshapes_Readme'</strong> file located in <strong>'Assets/AR-Renderer/Docs'</strong> folder.</li>
-							<li>Now we can proceed to the <a href="#fr-settings">Settings</a> section.</li>
+							<li>For more detailed information check <strong>'Blendshapes_Readme'</strong> file located in <strong>'Assets/WebXR Plugin/Docs'</strong> folder.</li>
+							<li>Now we can proceed to the <a href="#fr-build">Build</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
-					<section class="docs-section" id="fr-settings">
-						<h2 class="section-heading">Settings</h2>
+					<section class="docs-section" id="fr-build">
+						<h2 class="section-heading">Build</h2>
 						<ul>
 							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
 							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
@@ -587,7 +550,7 @@
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'WebXR Plugin'</strong> WebGL Template.</li>
 							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
@@ -609,34 +572,12 @@
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
-						</ul>
-					</section><!--//section-->
-
-					<section class="docs-section" id="fr-build">
-						<h2 class="section-heading">Build</h2>
-						<p>Everything is ready. It's time to check how it works.</p>
-						<ul>
-							<li>Open the <strong>'File'</strong> menu tab, select <strong>'Build Settings...'</strong> from the drop-down list, in the opened window press the <strong>'Build'</strong> button. Select a folder and save your build.</li>
-							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1IcQZVtWqH686lsm1iscCW20P3X4CHjJe/view?usp=drive_link">here.</a></li>
-							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
-							<li>Open the address from the opened console window in the browser on your phone.</li>
-							<div class="callout-block callout-block-info">
-								<div class="content">
-									<h4 class="callout-title">
-										<span class="callout-icon-holder me-1">
-											<i class="fas fa-info-circle"></i>
-										</span><!--//icon-holder-->
-										Device Support
-									</h4>
-									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
-								</div><!--//content-->
-							</div><!--//callout-block-->
+							<li>Close settings window.</li>
+							<li>Open the 'File' menu tab, select 'Build Settings...' from the drop-down list, in the opened window press the 'Build' button. Select a folder and save your build.</li>
+							<li>Now we can proceed to the <a href="#gs-localDebug">Local Debug</a> section.</li>
 						</ul>
 					</section><!--//section-->
 				</article><!--//docs-article-->
-
 
 				<article class="docs-article" id="s-surface-recognition">
 					<header class="docs-header">
@@ -659,13 +600,13 @@
 					<section class="docs-section" id="sr-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select the <strong>'Markers Tracking'</strong> option from the next drop-down list.</li>							
+							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'WebXR Plugin'</strong> from the drop-down list, then select the <strong>'Markers Tracking'</strong> option from the next drop-down list.</li>							
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/3-1-MarkersTracking.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-1-MarkersTracking.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>To test surface recognition, we have to do some preparations. Navigate to <strong>'Assets/AR-Renderer/Scripts'</strong>. Now select the <strong>'MarkerController'</strong> game object and drag and drop the <strong>'ObjectSpawner'</strong> script from the <strong>'Assets/AR-Renderer/Scripts'</strong> folder into the Inspector window.</li>
+							<li>To test surface recognition, we have to do some preparations. Navigate to <strong>'Assets/WebXR Plugin/Scripts'</strong>. Now select the <strong>'MarkerController'</strong> game object and drag and drop the <strong>'ObjectSpawner'</strong> script from the <strong>'Assets/WebXR Plugin/Scripts'</strong> folder into the Inspector window.</li>
 							<div class="callout-block callout-block-info">
 								<div class="content">
 									<h4 class="callout-title">
@@ -674,7 +615,7 @@
 										</span><!--//icon-holder-->
 										Note
 									</h4>
-									<p>This controller uses the user's device to move the camera around the Unity scene. If you want to use this option instead of surface recognition, replace the <strong>HitPoint</strong> game object with an empty game object (Don't forget to set it into the <strong>'Hit Point'</strong> field of the <strong>'MarkerController'</strong> game object's, the <strong>'MarkerTrackController (Script)'</strong> component). To test it, place some game objects on the scene. In my case, these will be several primitives. After that, you can proceed to the <a href="#sr-settings">Settings</a> section.</p>
+									<p>This controller uses the user's device to move the camera around the Unity scene. If you want to use this option instead of surface recognition, replace the <strong>HitPoint</strong> game object with an empty game object (Don't forget to set it into the <strong>'Hit Point'</strong> field of the <strong>'MarkerController'</strong> game object's, the <strong>'MarkerTrackController (Script)'</strong> component). To test it, place some game objects on the scene. In my case, these will be several primitives. After that, you can proceed to the <a href="#sr-settings">Build</a> section.</p>
 									<div class="simplelightbox-gallery row mb-3">
 										<div class="col-12 col-md-4 mb-3">
 											<a href="assets/images/3-6-Primitives.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-6-Primitives.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -709,12 +650,12 @@
 									<a href="assets/images/3-5-FunctionSelection.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/3-5-FunctionSelection.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to the <a href="#sr-settings">Settings</a> section.</li>
+							<li>Now we can proceed to the <a href="#sr-build">Build</a> section.</li>
 						</ul>
 					</section><!--//section-->
 
-					<section class="docs-section" id="sr-settings">
-						<h2 class="section-heading">Settings</h2>
+					<section class="docs-section" id="sr-build">
+						<h2 class="section-heading">Build</h2>
 						<ul>
 							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
 							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
@@ -723,7 +664,7 @@
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'WebXR Plugin'</strong> WebGL Template.</li>
 							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
@@ -745,42 +686,9 @@
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
-						</ul>
-					</section><!--//section-->
-
-					<section class="docs-section" id="sr-build">
-						<h2 class="section-heading">Build</h2>
-						<p>Everything is ready. It's time to check how it works.</p>
-						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong>, in opened window press <strong>'Build'</strong> button. Select folder and save your build.</li>
-							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1IcQZVtWqH686lsm1iscCW20P3X4CHjJe/view?usp=drive_link">here.</a></li>
-							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
-							<li>Open the address from the opened console window in the browser on your phone.</li>
-							<div class="callout-block callout-block-info">
-								<div class="content">
-									<h4 class="callout-title">
-										<span class="callout-icon-holder me-1">
-											<i class="fas fa-info-circle"></i>
-										</span><!--//icon-holder-->
-										Note
-									</h4>
-									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
-								</div><!--//content-->
-							</div><!--//callout-block-->
-							<div class="callout-block callout-block-danger me-1">
-								<div class="content">
-									<h4 class="callout-title">
-										<span class="callout-icon-holder">
-											<i class="fas fa-exclamation-triangle"></i>
-										</span><!--//icon-holder-->
-										Important
-									</h4>
-									<p>Unfortunately, iOS does not have full support for WebXR technology, so it may not work on iOS devices. Stay tuned for future updates.</p>
-								</div><!--//content-->
-							</div><!--//callout-block-->
-							<li>Wait until hit point appear and press the button which you created earlier to spawn your prefab.</li>
+							<li>Close settings window.</li>
+							<li>Open the 'File' menu tab, select 'Build Settings...' from the drop-down list, in the opened window press the 'Build' button. Select a folder and save your build.</li>
+							<li>Now we can proceed to the <a href="#gs-localDebug">Local Debug</a> section.</li>
 						</ul>
 					</section><!--//section-->
 				</article><!--//docs-article-->
@@ -806,13 +714,13 @@
 					<section class="docs-section" id="g-scene-setup">
 						<h2 class="section-heading">Scene Setup</h2>
 						<ul>
-							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select the <strong>'Geolocation Tracking'</strong> option from the next drop-down list.</li>
+							<li>In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'WebXR Plugin'</strong> from the drop-down list, then select the <strong>'Geolocation Tracking'</strong> option from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-1-GeolocationController.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-1-GeolocationController.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>It's time to add locations. In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'AR-Renderer'</strong> from the drop-down list, then select <strong>'Misc'</strong> from the next drop-down list, at last select the <strong>'Location'</strong> and <strong>'Arrow'</strong> options from the next drop-down list.</li>
+							<li>It's time to add locations. In Hierarchy, press <strong>'Righ mouse button (RMB)'</strong>, select <strong>'WebXR Plugin'</strong> from the drop-down list, then select <strong>'Misc'</strong> from the next drop-down list, at last select the <strong>'Location'</strong> and <strong>'Arrow'</strong> options from the next drop-down list.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
 									<a href="assets/images/4-2-LocationAndArrow.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/4-2-LocationAndArrow.PNG" alt="" title="CoderPro Home Page" /></a>
@@ -844,12 +752,12 @@
 								</div>
 							</div>
 							<li>Select <strong>'LocationManager'</strong> and drag and drop the created location into the <strong>'Locations'</strong> field and the created arrow into the <strong>'Arrows'</strong> field in Inspector.</li>
-							<li>Now we can proceed to the <a href="#g-settings">Settings</a> section.</li>
+							<li>Now we can proceed to the <a href="#g-build">Build</a> section.</li>
 						</ul>
 			</section><!--//section-->
 
-					<section class="docs-section" id="g-settings">
-						<h2 class="section-heading">Settings</h2>
+					<section class="docs-section" id="g-build">
+						<h2 class="section-heading">Build</h2>
 						<ul>
 							<li>Open the <strong>'File'</strong> menu tab and select the <strong>'Build Settings...'</strong> option from the drop-down list.</li>
 							<li>Now switch the build platform to <strong>WebGL</strong>.</li>
@@ -858,7 +766,7 @@
 									<a href="assets/images/20-WebGL.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/20-WebGL.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'AR-Renderer'</strong> WebGL Template.</li>
+							<li>Go to <strong>'Player Settings...'</strong> and navigate to the <strong>'Resolution and Presentation'</strong> tab. Select the <strong>'WebXR Plugin'</strong> WebGL Template.</li>
 							<li>If necessary you can set the <strong>'Base href'</strong> property. (The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed). Leave it empty for now.</li>
 							<div class="simplelightbox-gallery row mb-3">
 								<div class="col-12 col-md-4 mb-3">
@@ -880,41 +788,9 @@
 									<a href="assets/images/23-PublishingSettings.PNG"><img class="figure-img img-fluid shadow rounded" src="assets/images/23-PublishingSettings.PNG" alt="" title="CoderPro Home Page" /></a>
 								</div>
 							</div>
-							<li>Now we can proceed to the <a href="#tr-build">Build</a> section.</li>
-						</ul>
-					</section><!--//section-->
-
-					<section class="docs-section" id="g-build">
-						<h2 class="section-heading">Build</h2>
-						<p>Everything is ready. It's time to check how it works.</p>
-						<ul>
-							<li>Open <strong>'File'</strong> menu tab and from drop-down list select <strong>'Build Settings...'</strong>, in opened window press <strong>'Build'</strong> button. Select folder and save your build.</li>
-							<li>To run the build locally, you will need a local webserver with https protocol support. You can download it <a href="https://drive.google.com/file/d/1IcQZVtWqH686lsm1iscCW20P3X4CHjJe/view?usp=drive_link">here.</a></li>
-							<li>Download and unpack everything from the <strong>'local_debug'</strong> folder into your build folder.</li>
-							<li>Go to your build folder and run the file depending on your system (<strong>'app-windows'</strong> for Windows, <strong>'app-linux'</strong> for Linux, or <strong>'app-macos'</strong> for macOS).</li>
-							<li>Open the address from the opened console window in the browser on your phone.</li>
-							<div class="callout-block callout-block-info">
-								<div class="content">
-									<h4 class="callout-title">
-										<span class="callout-icon-holder me-1">
-											<i class="fas fa-info-circle"></i>
-										</span><!--//icon-holder-->
-										Note
-									</h4>
-									<p>At this moment, only the Chrome browser on Android devices is fully supported.</p>
-								</div><!--//content-->
-							</div><!--//callout-block-->
-							<div class="callout-block callout-block-danger me-1">
-								<div class="content">
-									<h4 class="callout-title">
-										<span class="callout-icon-holder">
-											<i class="fas fa-exclamation-triangle"></i>
-										</span><!--//icon-holder-->
-										Important
-									</h4>
-									<p>Unfortunately, iOS does not have full support for WebXR technology, so it may not work on iOS devices. Stay tuned for future updates.</p>
-								</div><!--//content-->
-							</div><!--//callout-block-->
+							<li>Close settings window.</li>
+							<li>Open the 'File' menu tab, select 'Build Settings...' from the drop-down list, in the opened window press the 'Build' button. Select a folder and save your build.</li>
+							<li>Now we can proceed to the <a href="#gs-localDebug">Local Debug</a> section.</li>
 						</ul>
 					</section><!--//section-->
 			</article><!--//docs-article-->
